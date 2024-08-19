@@ -1,3 +1,20 @@
+:root {
+    --background-color-light: #ffffff;
+    --text-color-light: #000000;
+    --background-color-dark: #2c2c2c;
+    --text-color-dark: #ffffff;
+}
+
+body.light-mode {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+}
+
+body.dark-mode {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -5,6 +22,20 @@ body {
     padding-top: 20px;
     font-family: Arial, sans-serif;
 }
+
+#lightDarkButton {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    color: inherit;
+}
+
 
 .container {
     display: flex;
@@ -23,24 +54,33 @@ body {
     height: 30px;
 }
 
-.btn {
+.paralBtn {
     padding: 10px 20px;
     width: 150px;
     margin: 0 10px;
     border: none;
     background-color: #007BFF;
     color: white;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
+    font-size: 15px;
+    font-family: "Times New Roman", serif;
 }
 
-.btn.selected {
+.left-btn {
+    text-align: right;
+}
+
+.right-btn {
+    text-align: left;
+}
+
+.paralBtn.selected {
     background-color: #28a745;
 }
 
-@media (max-width: 600px) {
+/*@media (max-width: 600px) {
     .btn {
         padding: 10px 15px;
-        font-size: 14px;
     }
-}
+}*/
