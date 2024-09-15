@@ -20,7 +20,6 @@ body {
     justify-content: center;
     align-items: flex-start;
     padding-top: 20px;
-    font-family: Arial, sans-serif;
 }
 
 #lightDarkButton {
@@ -30,14 +29,15 @@ body {
     padding: 10px;
     font-size: 16px;
     cursor: pointer;
-    background: none;
-    border: none;
+    background: white;
+    border: black solid 1px;
     outline: none;
     color: inherit;
 }
 
 
 .container {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,7 +51,11 @@ body {
 }
 
 .separator {
-    height: 30px;
+    height: 33px;
+}
+
+.mini-separator {
+    height: 15px;
 }
 
 .paralBtn {
@@ -64,7 +68,7 @@ body {
     border-radius: 15px;
     cursor: pointer;
     font-size: 15px;
-    font-family: "Times New Roman", serif;
+    font-family: Arial, sans-serif;
 }
 
 .left-btn {
